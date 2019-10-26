@@ -1,0 +1,584 @@
+.main-container.marathons_page {
+    max-width: 972px;
+}
+
+.marathons_page {
+    h1.page_title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 130%;
+        color: #000000;
+        margin-bottom: 33px;
+
+        &.with_before {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -18px;
+                left: 0;
+                width: 77px;
+                height: 5px;
+                background-image: url("/img/platforma/line_before_title.svg");
+                background-size: cover;
+            }
+        }
+    }
+
+    .tab .tab-nav {
+        margin-bottom: 9px;
+
+        ul li {
+            padding-bottom: 4px;
+            border-bottom: 3px solid transparent;
+
+            &.active {
+                border-bottom: 3px solid #CC8322;
+
+                a {
+                    color: #4F4F4F;
+                }
+            }
+        }
+    }
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -17px;
+        margin-left: -17px;
+    }
+
+    [class^=col-] {
+        position: relative;
+        width: 100%;
+        padding-right: 17px;
+        padding-left: 17px;
+        margin-bottom: 37px;
+    }
+
+    .col-3 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 16px 20px 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &_label {
+            display: block;
+            width: 36px;
+            height: 5px;
+            background: #60C09E;
+            border-radius: 5px;
+            margin-bottom: 13px;
+        }
+
+        &_main {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+
+            .left {
+                width: 100%;
+            }
+
+            .over_title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 153.59%;
+                color: #A2A2A2;
+                display: block;
+                margin: 10px 0;
+            }
+
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: #4F4F4F;
+            }
+
+            .img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 2px;
+                margin-right: 2px;
+                border-radius: 50%;
+                background-color: #C4C4C4;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        &_footer {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+
+            .link {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 153.59%;
+                text-align: right;
+                color: #3A966C;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .col-md-2 {
+        .card_label {
+            width: 114px;
+        }
+    }
+
+    .col-md-1 {
+        .card_main {
+            .date_wrap {
+                flex-direction: column;
+                margin: 16px 0 70px;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+
+                    & > span:after {
+                        content: ':';
+                    }
+                }
+
+                .date {
+                    margin-top: 0;
+                    background: transparent;
+                    border: none;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border-radius: 0;
+                    padding: 0;
+                    margin-left: 5px;
+
+                    div {
+                        margin-top: 0;
+                        text-align: center;
+                        color: #4F4F4F;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
+                        display: inline;
+                    }
+                }
+            }
+
+            .flex_img {
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                margin-top: 16px;
+                justify-content: space-between;
+
+                .date_wrap {
+                    margin-top: 0;
+                }
+
+                .img {
+                    width: 75px;
+                    height: 75px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .col-md-3.without_img .card {
+        .card_main {
+            margin-top: 12px;
+            margin-bottom: 10px;
+        }
+
+        .card_label {
+            width: 100%;
+        }
+
+        .title {
+            max-width: 342px;
+            width: 100%;
+            padding-right: 16px;
+            margin: 0;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #4F4F4F;
+        }
+
+        .rating_wrap {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 130%;
+            color: #4F4F4F;
+            border-left: 1px solid #D6D6D6;
+            border-right: 1px solid #D6D6D6;
+            width: 100%;
+            align-items: center;
+
+            .item {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            span {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #BDBDBD;
+                display: block;
+                margin-bottom: 3px;
+            }
+        }
+
+        .link_wrap {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 145px;
+            width: 100%;
+        }
+
+        .link {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 153.59%;
+            text-align: right;
+            color: #3A966C;
+        }
+    }
+
+    .col-md-3.without_img.with_play .card {
+        .video_link_wrap {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            align-items: center;
+            border-left: 1px solid #D6D6D6;
+            border-right: 1px solid #D6D6D6;
+            width: 100%;
+            padding: 0 18px;
+
+            .img {
+                display: block;
+                width: 35px;
+                margin-right: 12px;
+                margin-left: 0;
+                min-width: 35px;
+                height: 35px;
+                background-image: url("/img/platforma/play.svg");
+                background-color: transparent;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .title {
+                h4 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #557FAF;
+                    display: block;
+                    text-transform: initial;
+                }
+
+                span {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 120%;
+                    color: #BDBDBD;
+                }
+            }
+        }
+
+        .link_wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 20px;
+
+            span {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 120%;
+                text-align: right;
+                color: #BDBDBD;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.views {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 153.59%;
+    color: #D85243;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 15px;
+        display: inline-block;
+        margin-right: 12px;
+    }
+}
+
+.date_wrap {
+    margin: 28px 0 40px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    .item {
+        margin-right: 12px;
+
+        & > span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #A2A2A2;
+        }
+    }
+
+    .date {
+        margin-top: 3px;
+        background: #FAFAFA;
+        border: 1px solid #D6D6D6;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 6px 9px;
+
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: #4F4F4F;
+        }
+
+        div {
+            margin-top: 3px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            color: #4F4F4F;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .marathons_page {
+        .col-md-1 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .col-md-2 {
+            -ms-flex: 0 0 66.666666%;
+            flex: 0 0 66.666666%;
+            max-width: 66.666666%;
+        }
+
+        .col-md-3 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .marathons_page {
+        h1.page_title {
+            margin-top: 38px;
+            margin-bottom: 20px;
+        }
+
+        .col-md-2 .card_main {
+            position: relative;
+            margin-bottom: 21px;
+
+            .date_wrap {
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0 0 0 160px;
+                height: 150px;
+                margin-top: 20px;
+            }
+
+            .right {
+                position: absolute;
+                bottom: 0;
+            }
+
+            .img {
+                margin: 0;
+            }
+        }
+
+        .col-md-1 .card_main {
+            .left {
+                position: relative;
+            }
+
+            .title {
+                padding-left: 87px;
+            }
+
+            .flex_img {
+                padding-left: 87px;
+                margin-top: 10px;
+
+                .date_wrap {
+                    margin-bottom: 50px;
+                }
+
+                .img {
+                    position: absolute;
+                    left: 0;
+                    top: 38px;
+                }
+            }
+        }
+
+        .tab .tab-nav {
+            margin-bottom: 30px;
+        }
+
+        .col-md-3.without_img .card {
+            .card_main {
+                margin: 5px 0 0;
+                flex-direction: column;
+            }
+
+            .title {
+                max-width: 100%;
+                padding-right: 0;
+            }
+
+            .rating_wrap {
+                border: none;
+                border-top: 1px solid #D6D6D6;
+                border-bottom: 1px solid #D6D6D6;
+                padding: 15px 0;
+                margin: 17px 0;
+
+                .item:first-of-type {
+                    padding-left: 0;
+                }
+            }
+
+            .link_wrap {
+                max-width: 100%;
+                justify-content: flex-end;
+            }
+        }
+
+        .col-md-3.without_img.with_play .card {
+            .video_link_wrap {
+                border: none;
+                border-top: 1px solid #D6D6D6;
+                border-bottom: 1px solid #D6D6D6;
+                padding: 15px 0;
+                margin: 17px 0;
+            }
+
+            .link_wrap {
+                padding: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                span {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+// mobile tabs
+@media (max-width: 767px) {
+    .marathons_page {
+        .tab .tab-nav {
+            .desktop-ul {
+                display: none;
+            }
+
+            .mobile-tab-nav {
+                display: block;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .marathons_page {
+        .tab .tab-nav {
+            .desktop-ul {
+                display: block;
+            }
+
+            .mobile-tab-nav {
+                display: none;
+            }
+        }
+    }
+}

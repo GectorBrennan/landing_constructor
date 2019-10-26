@@ -1,0 +1,108 @@
+.b-tooltip {
+    min-height: 50px;
+    padding: 5px 10px 5px 20px;
+    background-color: #ffffff;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .txt {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 170%;
+        color: #4f4f4f;
+    }
+
+    .btn {
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid #4f4f4f;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 170%;
+        text-transform: uppercase;
+        color: #4f4f4f;
+        margin-left: 12px;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        &.w-175 {
+            min-width: 175px;
+        }
+    }
+
+    .ml-auto {
+        margin-left: auto;
+    }
+
+    .mr-auto {
+        margin-right: auto;
+    }
+    @media (max-width: 767.98px) {
+        padding: 10px;
+        justify-content: flex-start;
+
+        .btn {
+            margin-left: 0;
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+
+        .txt {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.b-tooltip--orange {
+    background-color: #CC8322;
+
+    .txt {
+        color: #FFFFFF;
+    }
+
+    .btn {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ffffff;
+        color: #ffffff;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+
+.b-tooltip--blue {
+    background-color: #557FAF;
+
+    .txt {
+        color: #FFFFFF;
+    }
+
+    .btn {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ffffff;
+        color: #ffffff;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    }
+}

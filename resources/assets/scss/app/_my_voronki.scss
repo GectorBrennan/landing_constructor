@@ -1,0 +1,208 @@
+.my_voronki_page {
+    .card.search_wrap {
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    table.custom_table {
+        tr {
+            &:first-of-type {
+                td {
+                    &.all_leads {
+                        max-width: 65px;
+                    }
+
+                    &.seven_days_leads {
+                        max-width: 65px;
+                        padding: 13px 10px;
+                    }
+
+                    &.complete_leads {
+                        max-width: 70px;
+                        word-break: break-all;
+                        padding: 13px 10px;
+                    }
+                }
+            }
+
+            td {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                color: #828282;
+
+                &.name {
+                    max-width: 180px;
+                    padding-right: 15px;
+                }
+
+                &.data {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                &.date_create {
+                    font-size: 13px;
+                    line-height: 153.59%;
+                }
+
+                &.action {
+                    padding-left: 85px;
+                    max-width: 150px;
+
+                    [class^="icon-"] {
+                        font-size: 18px;
+                        color: #828282;
+
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+
+                    .icon-delete {
+                        margin-right: 0;
+                    }
+
+                    .icon-menu_dots {
+                        color: #C4C4C4;
+                        width: 5px;
+                        padding: 5px 0;
+                    }
+
+                    .custom-switch {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            @media (max-width: 767.98px) {
+                td {
+                    &.name {
+                        min-width: 220px;
+                    }
+
+                    &.date_create {
+                        white-space: nowrap;
+                    }
+
+                    &.complete_leads {
+                        max-width: 200px !important;
+                        word-break: normal !important;
+                    }
+
+                    &.seven_days_leads {
+                        min-width: 80px;
+                    }
+
+                    &.action {
+                        padding-left: 25px !important;
+                        max-width: 170px !important;
+                    }
+
+                    &.data {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .b-form .custom-control {
+            min-height: 16px;
+            margin-left: 15px;
+        }
+    }
+
+    .custom_table_footer {
+        .pagination {
+            margin: 32px 0 30px;
+        }
+
+        .select_wrap {
+            margin-left: auto;
+            width: 220px;
+        }
+    }
+    @media (max-width: 450px) {
+        .tab .tab-nav .desktop-ul {
+            display: none;
+        }
+
+        .card.search_wrap.border {
+            box-shadow: none;
+        }
+
+        .tab-nav {
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+table.custom_table {
+    .dropdown-menu {
+        min-width: 220px;
+        padding: 18px 20px;
+    }
+
+    tr {
+        td {
+            &.action.b-form {
+                padding-left: 85px;
+                max-width: 150px;
+
+                [class^="icon-"] {
+                    font-size: 18px;
+                    color: #828282;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+
+                .icon-delete {
+                    margin-right: 0;
+                }
+
+                .icon-menu_dots {
+                    color: #C4C4C4;
+                    width: 5px;
+                    padding: 5px 0;
+
+                    &::before {
+                        content: "\e944";
+                        width: 7px;
+                        display: block;
+                    }
+                }
+
+                .custom-switch {
+                    margin-bottom: 0;
+                    min-height: 16px;
+                    margin-left: 10px;
+                    margin-right: 5px;
+                    min-width: 20px;
+                    max-width: 40px;
+                    cursor: pointer;
+                }
+
+                .icons {
+                    display: -ms-flex;
+                    display: -webkit-box;
+                    display: flex;
+                    width: 100%;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                }
+
+                .custom-switch {
+                    margin-bottom: 0;
+                    min-height: 16px;
+                }
+
+                [class^="icon-"], [class*=" icon-"] {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "laravel-mix": "^4.0.16",
+        "node-sass": "^4.9.3",
+        "resolve-url-loader": "^3.1.0",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10",
+        "webpack": "^4.35.0",
+        "webpack-cli": "^3.3.5"
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-build-classic": "^12.4.0",
+        "@ckeditor/ckeditor5-vue": "^1.0.0",
+        "axios": "^0.19.0",
+        "bootstrap-sass": "^3.3.7",
+        "bower": "^1.8.4",
+        "create-webpack-config": "^0.2.1",
+        "cross-env": "^5.1",
+        "css-loader": "^2.1.1",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^4.0.16",
+        "lodash": "^4.17.15",
+        "pnotify": "^3.2.1",
+        "pusher-js": "^4.3.1",
+        "semver": "^6.1.2",
+        "style-loader": "^0.19.1",
+        "table-dragger": "^1.0.2",
+        "vue": "^2.5.17",
+        "vue-infinite-loading": "^2.4.4",
+        "vue-loader": "^15.7.1",
+        "vue-resource": "^1.5.1",
+        "vue-social-sharing": "^2.4.5",
+        "vue-textarea-autosize": "^1.0.4",
+        "vuex": "^3.1.1"
+    }
+}
